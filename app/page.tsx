@@ -7,6 +7,7 @@ import {Newspaper, SquareArrowOutUpRight} from "lucide-react";
 import ProjectsGrid from "@/components/projects";
 import { useRouter } from "next/navigation";
 import RenderLinks from "@/components/links";
+//hello
 export default function Home() {
     const router = useRouter();
     return (
