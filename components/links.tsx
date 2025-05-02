@@ -9,33 +9,33 @@ import {
 
 type LinkType = {
     url: string;
-    color: string;
+    colorClass: string; // Add this field instead of `color`
     title: string;
     img: LucideIcon;
 };
 
 const links: LinkType[] = [
     {
-        url: "https://linkedin.com/in/yourprofile",
-        color: "blue",
+        url: "https://www.linkedin.com/in/david-crimi/",
+        colorClass: "hover:text-blue-500",
         title: "/LinkedIn",
         img: Linkedin,
     },
     {
-        url: "https://github.com/yourusername",
-        color: "purple",
+        url: "https://github.com/CrimiDavid",
+        colorClass: "hover:text-purple-500",
         title: "/GitHub",
         img: Github,
     },
     {
-        url: "https://devpost.com/yourusername",
-        color: "yellow",
+        url: "https://devpost.com/CrimiDavid",
+        colorClass: "hover:text-yellow-500",
         title: "/DevPost",
         img: Award,
     },
     {
-        url: "/resume.pdf",
-        color: "red",
+        url: "/David_Crimi_Resume_2025_2026.pdf",
+        colorClass: "hover:text-red-500",
         title: "/Resume",
         img: FileText,
     },
@@ -52,7 +52,7 @@ const LinkItem = ({ link }: LinkItemProps) => {
                 href={link.url}
                 target={link.url.startsWith("http") ? "_blank" : undefined}
                 rel={link.url.startsWith("http") ? "noopener noreferrer" : undefined}
-                className={`flex text-base items-center gap-2 font-mono hover:text-${link.color}-500 transition-colors duration-200 group`}
+                className={`flex text-base items-center gap-2 font-mono ${link.colorClass} transition-colors duration-200 group`}
             >
                 <link.img className="h-5 w-5" />
                 {link.title}
