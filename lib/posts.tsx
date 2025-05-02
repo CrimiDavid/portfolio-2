@@ -76,30 +76,19 @@ export function getSortedPostsData() {
     );
 }
 
+// Update the getAllPostIds function to make sure it returns the correct format
 export function getAllPostIds() {
     const fileNames = fs.readdirSync(postsDirectory);
 
-    // Returns an array that looks like this:
-    // [
-    //   {
-    //     params: {
-    //       id: 'ssg-ssr'
-    //     }
-    //   },
-    //   {
-    //     params: {
-    //       id: 'pre-rendering'
-    //     }
-    //   }
-    // ]
+    // This must return an array of objects with the exact shape Next.js expects
+    // for the dynamic route parameters
     return fileNames.map((fileName) => {
         return {
-            params: {
-                id: fileName.replace(/\.md$/, ""),
-            },
+            id: fileName.replace(/\.md$/, ""),
         };
     });
 }
+
 
 export async function getPostData(id: string) {
     const fullPath = path.join(postsDirectory, `${id}.md`);
