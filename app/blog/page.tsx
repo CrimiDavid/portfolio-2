@@ -1,6 +1,6 @@
 // app/blog/page.tsx
 import Link from "next/link";
-import { type PostMetadataType, getSortedPostsData } from "@/lib/posts";
+import { ArrowLeft } from 'lucide-react';import { type PostMetadataType, getSortedPostsData } from "@/lib/posts";
 import { formatDateDigits } from "@/lib/utils";
 import type { Metadata } from "next";
 
@@ -44,8 +44,9 @@ export default async function Blog() {
             <header className="mb-3 text-center">
                 <a
                     href={"/"}
-                    className={"flex"}
+                    className="md:flex hidden justify-center items-center gap-2 px-4 max-w-1/5 py-2 rounded-lg transition-colors text-base hover:text-gray-900 hover:bg-gray-100 font-medium"
                 >
+                    <ArrowLeft className={"flex -mr-2"}/>
                     My website
                 </a>
                 <h1 className="font-serif text-4xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
