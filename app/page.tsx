@@ -19,7 +19,7 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {/* Column 1 */}
                     <div className="col-span-1">
-                        <div className="md:fixed flex-col mt-24 break-words space-y-1 text-left">
+                        <div className="md:fixed flex-col mt-12 break-words space-y-1 text-left">
                             <h1 className="text-4xl font-mono font-semibold uppercase tracking-wider">
                                 David Crimi
                             </h1>
@@ -56,7 +56,7 @@ export default function Home() {
 
                     {/* Column 2 */}
                     <div className="col-span-2">
-                        <div className={"mt-24"}>
+                        <div className={"mt-12"}>
 
                             <div className={"flex  justify-between"}>
                                 <h1 className={"text-xl font-mono font-semibold opacity-80 mb-10"}> my projects </h1>
