@@ -43,33 +43,33 @@ export default async function Page({ params }: { params: { id: string } }) {
                     {publishDateFormatted} • {readTime} min read
                 </p>
             </header>
+            <div className={"grid grid-cols-3"}>
+                <div className={"md:col-span-1"}>
+                    <aside
+                        className="md:block fixed border-4 rounded-lg p-4 ml-2 hidden mt-6  "
+                    >
+                        <h2 className="mb-2 text-base font-semibold tracking-tight opacity-80">
+                            Table of Contents
+                        </h2>
+                        <div dangerouslySetInnerHTML={{ __html: tableOfContents }} />
+                    </aside>
+                </div>
 
-            {tableOfContents && tableOfContents.length > 60 && (
-                <aside
-                    className="hidden mt-6 lg:block fixed top-[5.5rem] left-4
-               w-64 max-h-[75vh] overflow-auto rounded-md
-               border border-neutral-300/50 bg-white/80 dark:bg-black/60
-               p-4 text-sm shadow-xl backdrop-blur
-               dark:text-neutral-200 z-20"
-                >
-                    <h2 className="mb-2 text-base font-semibold tracking-tight opacity-80">
-                        Table of Contents
-                    </h2>
-                    <div dangerouslySetInnerHTML={{ __html: tableOfContents }} />
-                </aside>
-            )}
+                <div className={"md:col-span-2 col-span-full w-full "}>
+                    <main
+                        className="font-mono text-base w-full px-4 lg:px-10 py-10"
+                    >
+                        <article
+                            className="prose prose-md w-full dark:prose-invert"
+                            dangerouslySetInnerHTML={{ __html: contentHtml }}
+                        />
 
-            <main
-                className="relative mx-auto font-mono text-base max-w-7xl px-4 lg:px-10 py-10
-                   lg:ml-[18rem]"
-            >
-                <article
-                    className="prose prose-lg max-w-none dark:prose-invert
-             [&>p>img]:mx-auto
-             [&_pre]:max-w-3xl [&_pre]:mx-auto"
-                    dangerouslySetInnerHTML={{ __html: contentHtml }}
-                />
-            </main>
+
+                    </main>
+                </div>
+
+            </div>
+
 
             <footer className="px-4 lg:px-10 py-10 text-center text-sm opacity-70">
                 © {new Date().getFullYear()} david-crimi.com • All rights reserved
