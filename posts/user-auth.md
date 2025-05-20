@@ -5,14 +5,12 @@ description: "Securely manage user sessions with JWT, FastAPI, and Next.js."
 micro: false
 ---
 
-# Authentication and Authorization with FastAPI and Next.js
-
 When building full-stack applications, one crucial aspect is ensuring secure and efficient authentication and authorization (user auth). During my recent project combining **FastAPI** on the backend and **Next.js** on the frontend, I encountered a common yet challenging question: **How do I securely manage user sessions and protect backend endpoints effectively?**
 Given the overwhelming number of available solutions, I couldnt find anything that perfectly suited my needs. I experimented extensively and finally developed a clean, scalable method tailored to integrating **FastAPI** and **Next.js**. In this guide, I'll share my approach to implementing secure, robust JWT-based authentication and authorization.
 
 ---
 
-## Overview: Our Authentication Strategy
+## Overview: Strategy
 
 The strategy centers around three main principles:
 
