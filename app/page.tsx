@@ -64,32 +64,33 @@ export default function Home() {
                     </div> {/* End of Column 2 */}
                         <h1 className={"text-2xl font-mono font-semibold opacity-80 mb-1"}> Tech Stack </h1>
                         <ul className="grid md:grid-cols-3 grid-cols-2 w-full">
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiPython /> Python</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><FaJava/>Java</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiCplusplus /> C++</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiC /> C</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiPython className="text-inherit" /> Python</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><FaJava className="text-inherit" /> Java</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiCplusplus className="text-inherit" /> C++</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiC className="text-inherit" /> C</li>
 
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"> <SiTailwindcss/> Tailwind</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiJavascript /> TypeScript</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiTailwindcss className="text-inherit" /> Tailwind</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiJavascript className="text-inherit" /> TypeScript</li>
 
                             {/* Frameworks & Technologies */}
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiDjango /> Django</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiFastapi /> FastAPI</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiReact /> React</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiFlask /> Flask</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiNextdotjs /> Next.js</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiLinux /> Linux</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiGit /> Git</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><FaAws/>AWS</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiDjango className="text-inherit" /> Django</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiFastapi className="text-inherit" /> FastAPI</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiReact className="text-inherit" /> React</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiFlask className="text-inherit" /> Flask</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiNextdotjs className="text-inherit" /> Next.js</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiLinux className="text-inherit" /> Linux</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiGit className="text-inherit" /> Git</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><FaAws className="text-inherit" /> AWS</li>
 
                             {/* Databases & DevOps */}
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiMysql /> MySQL</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiPostgresql /> PostgreSQL</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiMongodb /> MongoDB</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiGraphql /> GraphQL</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiGithubactions /> GitHub Actions</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiJenkins /> Jenkins</li>
-                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiDocker /> Docker</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiMysql className="text-inherit" /> MySQL</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiPostgresql className="text-inherit" /> PostgreSQL</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiMongodb className="text-inherit" /> MongoDB</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiGraphql className="text-inherit" /> GraphQL</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiGithubactions className="text-inherit" /> GitHub Actions</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiJenkins className="text-inherit" /> Jenkins</li>
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200"><SiDocker className="text-inherit" /> Docker</li>
+
                         </ul>
 
                     </div>
