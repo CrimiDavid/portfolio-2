@@ -1,7 +1,13 @@
 "use client"
 
-import { Label } from "@/components/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import {
+    SiPython, SiCplusplus, SiC, SiHtml5, SiCss3,
+    SiJavascript, SiMysql, SiPostgresql, SiMongodb,
+    SiDjango, SiFastapi, SiReact, SiFlask, SiNextdotjs,
+    SiLinux, SiGit, SiGithubactions,
+    SiGraphql, SiJenkins, SiDocker, SiTailwindcss
+} from 'react-icons/si';
+import { FaJava , FaAws} from "react-icons/fa";
 import {Button} from "@/components/ui/button";
 import {Newspaper, SquareArrowOutUpRight} from "lucide-react";
 import ProjectsGrid from "@/components/projects";
@@ -20,7 +26,7 @@ export default function Home() {
                     {/* Column 1 */}
                     <div className="col-span-1">
                         <div className="md:fixed flex-col mt-12 break-words space-y-1 text-left">
-                            <h1 className="text-4xl font-mono font-semibold uppercase tracking-wider">
+                            <h1 className="lg:text-4xl md:text-2xl text-4xl font-mono font-semibold uppercase tracking-wider">
                                 David Crimi
                             </h1>
                             <p className="font-mono font-semibold italic">
@@ -28,38 +34,22 @@ export default function Home() {
                             </p>
 
                             {/* links container*/}
-                            <div className={"mt-12"}></div>
+                            <div className={"mt-12"}>
                             <h1 className={"text-2xl font-mono font-semibold opacity-80 mb-1"}> Links </h1>
                             {/* Links */}
                             <RenderLinks/>
-                            {/*<div className={"w-full h-32 border-2 mt-20 rounded-2xl overflow-x-auto"}>*/}
-                            {/*    <header className={"flex border-b justify-center"}>*/}
-                            {/*        <RadioGroup className={"flex"} defaultValue="option-one">*/}
-                            {/*            <div className="flex items-center space-x-2">*/}
-                            {/*                <RadioGroupItem value="option-one" id="option-one"/>*/}
-                            {/*                <Label htmlFor="option-one">frontend</Label>*/}
-                            {/*            </div>*/}
-                            {/*            <div className="flex items-center space-x-2">*/}
-                            {/*                <RadioGroupItem value="option-two" id="option-two" />*/}
-                            {/*                <Label htmlFor="option-two">backend</Label>*/}
-                            {/*            </div>*/}
-                            {/*            <div className="flex items-center space-x-2">*/}
-                            {/*                <RadioGroupItem value="option-three" id="option-three" />*/}
-                            {/*                <Label htmlFor="option-three">misc</Label>*/}
-                            {/*            </div>*/}
-                            {/*        </RadioGroup>*/}
-                            {/*    </header>*/}
-                            {/*</div>*/}
+                            </div>
+
                         </div>
 
                     </div>
 
                     {/* Column 2 */}
                     <div className="col-span-2">
-                        <div className={"mt-12"}>
+                        <div className={"mt-12 mb-8"}>
 
                             <div className={"flex  justify-between"}>
-                                <h1 className={"text-xl font-mono font-semibold opacity-80 mb-10"}> my projects </h1>
+                                <h1 className={"text-2xl font-mono font-semibold opacity-80 mb-10"}> Projects </h1>
 
                                 <Button
                                     onClick={() => {router.push("/blog")}}
@@ -68,12 +58,46 @@ export default function Home() {
                                     Blog
                                 </Button>
                             </div>
-                            <div > {/* Start with 1 col on small screens, 2 on medium+ */}
+                            <div >
                                 <ProjectsGrid/>
-                            </div> {/* End of the inner card grid */}
+                            </div>
                     </div> {/* End of Column 2 */}
+                        <h1 className={"text-2xl font-mono font-semibold opacity-80 mb-1"}> Tech Stack </h1>
+                        <ul className="grid md:grid-cols-3 grid-cols-2 w-full">
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiPython /> Python</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><FaJava/>Java</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiCplusplus /> C++</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"> <SiTailwindcss/> Tailwind</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiJavascript /> TypeScript</li>
+
+                            {/* Frameworks & Technologies */}
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiDjango /> Django</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiFastapi /> FastAPI</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiReact /> React</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiFlask /> Flask</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiNextdotjs /> Next.js</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiLinux /> Linux</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiGit /> Git</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><FaAws/>AWS</li>
+
+                            {/* Databases & DevOps */}
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiMysql /> MySQL</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiPostgresql /> PostgreSQL</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiMongodb /> MongoDB</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiGraphql /> GraphQL</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiGithubactions /> GitHub Actions</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiJenkins /> Jenkins</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiDocker /> Docker</li>
+                        </ul>
+
                     </div>
                 </div>
+
+                <footer>
+                    <h1 className={"mt-8 flex flex-col justify-between border-t border-black py-8 opacity-20 transition-opacity hover:opacity-50 md:flex-row dark:border-white"}>
+                        © 2025 David Crimi
+                    </h1>
+                </footer>
             </div>
         </div>
     )

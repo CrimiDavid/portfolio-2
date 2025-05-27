@@ -67,9 +67,9 @@ interface ProjectProps {
 const ProjectCard = ({ project }: ProjectProps) => {
     return (
         <a className="cursor-pointer" href={project.link}>
-            <div className="relative aspect-video w-full overflow-hidden rounded-2xl mb-2">
+            <div className="relative aspect-video w-full overflow-hidden rounded-2xl mb-2 border-2 border-gray-500/80" >
                 <Image
-                    className="object-cover"
+                    className="object-cover project-image-shadow"
                     src={project.imageUrl}
                     alt={project.title}
                     fill

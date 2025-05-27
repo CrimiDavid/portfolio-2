@@ -18,7 +18,7 @@ The strategy centers around three main principles:
 - Using **HTTP-only cookies** for storing JWT tokens securely on the client.
 - Leveraging **FastAPI Dependency Injection** and **Next.js App Router** for seamless integration and protection of routes.
 
-![JWT Diagram](/blog-images/JWT-Flow.png)
+![JWT Diagram](/blog-images/user-auth/JWT-Flow.png)
 
 **Figure 1**: The diagram above provides a high-level overview of the JWT authentication flow we'll implement.
 
@@ -574,7 +574,7 @@ We have now encapsulating the entire auth flow in a reusable hook, you can keep 
 When building secure APIs that rely on access and refresh tokens for authentication, it's crucial to consider the implications of concurrent requests especially when it comes to refreshing expired tokens. One common issue that arises in high-concurrency scenarios is a **race condition during token refresh operations**. Here's a breakdown of how this problem occurs and why it's important to handle it carefully.
 
 
-![Refresh Diagram](/blog-images/refresh-flow.png)
+![Refresh Diagram](/blog-images/user-auth/refresh-flow.png)
 **Figure 2**: refresh race condition diagram
 
 ---

@@ -133,4 +133,10 @@ img {
             0 0 0 5px rgb(24, 24, 24),
             0 0 0 6px rgb(96, 96, 96);
   }
+  .project-image-shadow {
+    box-shadow:
+            0 0 0 1px rgb(96, 96, 96),
+            0 0 0 5px rgb(24, 24, 24),
+            0 0 0 6px rgb(96, 96, 96);
+  }
 }
