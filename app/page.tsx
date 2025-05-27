@@ -67,6 +67,8 @@ export default function Home() {
                             <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiPython /> Python</li>
                             <li className="flex items-center gap-2 text-neutral-200 text-lg"><FaJava/>Java</li>
                             <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiCplusplus /> C++</li>
+                            <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiC /> C</li>
+
                             <li className="flex items-center gap-2 text-neutral-200 text-lg"> <SiTailwindcss/> Tailwind</li>
                             <li className="flex items-center gap-2 text-neutral-200 text-lg"><SiJavascript /> TypeScript</li>
 
