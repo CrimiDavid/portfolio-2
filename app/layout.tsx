@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         siteName: 'David Crimi',
         images: [
             {
-                url: 'https://davidcrimi.com/og-image.jpg', // Replace with your actual image URL
+                url: 'https://davidcrimi.com/ogpng', // Replace with your actual image URL
                 width: 1200,
                 height: 630,
                 alt: 'David Crimi portfolio preview image',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'David Crimi: Software Engineer',
         description: 'Explore the portfolio and development work of David Crimi.',
-        images: ['https://davidcrimi.com/og-image.jpg'], // Replace with your actual image URL
+        images: ['https://davidcrimi.com/og.png'], // Replace with your actual image URL
     },
 };
 

@@ -46,7 +46,7 @@ export default async function Page({ params }: { params: { id: string } }) {
             <div className={"grid grid-cols-3"}>
                 <div className={"md:col-span-1"}>
                     <aside
-                        className="md:block border-4 border-accent rounded-lg p-4 ml-2 hidden mt-6  "
+                        className="md:block sticky top-32 border-4 border-accent rounded-lg p-4 ml-2 hidden mt-6  "
                     >
                         <h2 className="mb-2 text-base font-semibold tracking-tight opacity-80">
                             Table of Contents
