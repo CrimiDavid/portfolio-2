@@ -84,7 +84,7 @@ export default function Home() {
                             </li>
 
                             {/* Frameworks & Technologies */}
-                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200 hover:scale-[1.02] transition-all duration-200 ease-in-out">
+                            <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-foreground hover:scale-[1.02] transition-all duration-200 ease-in-out">
                                 <SiDjango className="text-inherit" /> Django
                             </li>
                             <li className="flex items-center gap-2 text-lg text-neutral-800 dark:text-neutral-200 hover:scale-[1.02] transition-all duration-200 ease-in-out">

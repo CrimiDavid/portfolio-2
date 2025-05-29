@@ -10,8 +10,9 @@ export async function generateStaticParams() {
 }
 
 // Main page component with params
-export default async function Page({ params }: { params: { id: string } }) {
-    const postData = await getPostData(params.id);
+export default async function Page({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
+    const postData = await getPostData(id);
     if (!postData) return notFound();
 
     const {
@@ -25,9 +26,9 @@ export default async function Page({ params }: { params: { id: string } }) {
     const publishDateFormatted = formatDate(date);
 
     return (
-        <div className="min-h-screen w-full bg-white dark:bg-black text-neutral-900 dark:text-neutral-100">
+        <div className="min-h-screen w-full">
             <header className="sticky top-0 z-30 w-full border-b border-neutral-200/70 dark:border-neutral-800/70
-                         backdrop-blur bg-white/80 dark:bg-black/70 px-4 lg:px-10 py-4">
+                         backdrop-blur px-4 lg:px-10 py-4">
                 <div className={"flex justify-between"}>
                     <h1 className="font-serif-display text-3xl font-semibold leading-snug tracking-tight">
                         {title}
@@ -46,7 +47,7 @@ export default async function Page({ params }: { params: { id: string } }) {
             <div className={"grid grid-cols-3"}>
                 <div className={"md:col-span-1"}>
                     <aside
-                        className="md:block sticky top-32 border-4 border-accent rounded-lg p-4 ml-2 hidden mt-6  "
+                        className="md:block sticky top-32 border-4 border-foreground/20 rounded-lg p-4 ml-2 hidden mt-6  "
                     >
                         <h2 className="mb-2 text-base font-semibold tracking-tight opacity-80">
                             Table of Contents

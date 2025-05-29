@@ -49,18 +49,18 @@ export default async function Blog() {
                     <ArrowLeft className={"flex -mr-2"}/>
                     My website
                 </a>
-                <h1 className="font-serif text-4xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
+                <h1 className="font-serif text-4xl font-bold tracking-tight">
                     David<span className="text-primary-500">'s</span> Blog
                 </h1>
-                <p className="mt-2 text-neutral-600 dark:text-neutral-400">
+                <p className="mt-2">
                     I make occasional posts about what I&apos;m learning
                 </p>
-                <div className="mt-6 h-px w-full bg-neutral-300 dark:bg-neutral-700/40" />
+                <div className="mt-6 h-px w-full " />
             </header>
 
             {/* Regular Posts */}
             <section aria-labelledby="posts-heading" className="space-y-4">
-            <ul className="divide-y divide-neutral-200 dark:divide-neutral-700/40">
+            <ul className="divide-y ">
                     {regularPosts.map(({ id, date, title }) => (
                         <li
                             key={id}
@@ -68,13 +68,13 @@ export default async function Blog() {
                         >
                             <time
                                 dateTime={date}
-                                className="shrink-0 font-mono text-base mr-5 text-neutral-500 transition-colors group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-neutral-200"
+                                className="shrink-0 font-mono text-base mr-5 text-neutral-500 transition-colors group-hover:text-neutral-900  dark:group-hover:text-neutral-200"
                             >
                                 {formatDateDigits(date)}
                             </time>
                             <Link
                                 href={`/blog/${id}`}
-                                className="flex-1 text-lg font-medium text-neutral-900 underline-offset-4 transition-colors hover:text-primary-600 hover:underline dark:text-neutral-100 dark:hover:text-primary-400"
+                                className="flex-1 text-lg font-medium  underline-offset-4 transition-colors hover:text-primary-600 hover:underline  dark:hover:text-primary-400"
                             >
                                 {title}
                             </Link>
