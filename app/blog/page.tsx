@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         type: "website",
         images: [
             {
-                url: "https://www.david-crimi.com/null.jpg",
+                url: "https://www.david-crimi.com/og.png",
             },
         ],
     },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         title: "David's technical blog",
         description:
             "I'm David — software engineer. Explore my work, blog, and ways to connect.",
-        images: ["https://www.david-crimi.com/null.jpg"],
+        images: ["https://www.david-crimi.com/og.png"],
     },
 };
 
