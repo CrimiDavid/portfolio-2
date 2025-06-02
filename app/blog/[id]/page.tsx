@@ -87,10 +87,21 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
                         ← All Posts
                     </a>
                 </div>
+                {/* Mobile TOC - Collapsible */}
+
             </header>
 
             {/* Main Content Layout */}
             <div className="max-w-7xl mx-auto">
+                <details className="lg:hidden mx-4 mt-6 border border-foreground rounded-lg bg ">
+                    <summary className="p-4 cursor-pointer font-semibold text-sm">
+                        Table of Contents
+                    </summary>
+                    <div
+                        className="px-4 pb-4 prose prose-sm dark:prose-invert prose-a:text-neutral-600 dark:prose-a:text-neutral-400 prose-a:no-underline"
+                        dangerouslySetInnerHTML={{ __html: tableOfContents }}
+                    />
+                </details>
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                     {/* Table of Contents - Desktop Sidebar */}
                     <div className="lg:col-span-1 order-2 lg:order-1">
@@ -104,16 +115,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
                             />
                         </aside>
 
-                        {/* Mobile TOC - Collapsible */}
-                        <details className="lg:hidden mx-4 mt-6 border border-neutral-200 dark:border-neutral-800 rounded-lg bg-neutral-50/50 dark:bg-neutral-900/50">
-                            <summary className="p-4 cursor-pointer font-semibold text-sm">
-                                Table of Contents
-                            </summary>
-                            <div
-                                className="px-4 pb-4 prose prose-sm dark:prose-invert prose-a:text-neutral-600 dark:prose-a:text-neutral-400 prose-a:no-underline"
-                                dangerouslySetInnerHTML={{ __html: tableOfContents }}
-                            />
-                        </details>
+
                     </div>
 
                     {/* Article Content */}
