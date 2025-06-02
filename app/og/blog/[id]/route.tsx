@@ -2,8 +2,7 @@
 import { ImageResponse } from 'next/og';
 import { getPostData } from '@/lib/posts';
 
-export const runtime = 'edge';
-
+export const runtime = 'nodejs';
 export async function GET(
     req: Request,
     { params }: { params: Promise<{ id: string }> }
