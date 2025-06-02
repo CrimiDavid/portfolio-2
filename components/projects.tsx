@@ -9,10 +9,10 @@ type Project = {
 }
 const Projects: Project[] = [
     {
-        title: "Impactify",
+        title: "Impactify (Hack the Valley 9 -- Winner 1st Overall)",
         description:
             "A health-monitoring system that embeds IoT sensors in sports helmets to track and analyze impact data, helping prevent brain injuries.",
-        imageUrl: "/Impactify.png",
+        imageUrl: "/impactify.png",
         link: "https://github.com/MatthewFrieri/HackTheValley_Impactify",
     },
     {
