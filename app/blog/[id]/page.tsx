@@ -76,16 +76,19 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
                         <h1 className="font-serif-display text-2xl md:text-3xl font-semibold leading-snug tracking-tight pr-4">
                             {title}
                         </h1>
-                        <p className="mt-1 font-serif text-sm opacity-70">
-                            {publishDateFormatted} • {readTime} min read
-                        </p>
+                        <div className="flex justify-between items-center"> {/* Added items-center */}
+                            <p className="mt-1 font-serif text-sm opacity-70">
+                                {publishDateFormatted} • {readTime} min read
+                            </p>
+                            <a
+                                className="flex md:text-lg items-center px-3 py-2 text-sm font-medium transition-all ease-in-out duration-200 hover:scale-110"
+                                href="/blog"
+                            >
+                                ← All Posts
+                            </a>
+                        </div>
                     </div>
-                    <a
-                        className="hidden md:flex items-center px-3 py-2 text-lg font-medium transition-all ease-in-out duration-200 hover:scale-110 "
-                        href="/blog"
-                    >
-                        ← All Posts
-                    </a>
+
                 </div>
                 {/* Mobile TOC - Collapsible */}
 
