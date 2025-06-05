@@ -29,13 +29,7 @@ const Projects: Project[] = [
         imageUrl: "/bacon.png",
         link: "https://github.com/tarang5757/project",
     },
-    {
-        title: "Alien Invaders Game",
-        description:
-            "A 2D arcade-style shooter built with Python and Pygame featuring real-time collision detection and adaptive alien-fleet behavior.",
-        imageUrl: "/alien.png",
-        link: "https://github.com/CrimiDavid/Ai-Invaders",
-    },
+
     {
         title: "Optimal Uber Finder",
         description:
