@@ -9,6 +9,13 @@ type Project = {
 }
 const Projects: Project[] = [
     {
+        title: "FourthJudge",
+        description:
+            "A full-stack, real-time platform for live UFC fight voting. Engineered a scalable backend with microservices and Redis caching, reducing API load by 90%+ and boosting performance for hundreds of concurrent users.",
+        imageUrl: "/ufc-voting.png",
+        link: "https://www.fourthjudge.io",
+    },
+    {
         title: "Impactify (Hack the Valley 9 -- Winner 1st Overall)",
         description:
             "A health-monitoring system that embeds IoT sensors in sports helmets to track and analyze impact data, helping prevent brain injuries.",
